@@ -1,0 +1,82 @@
+body{
+    background-color:#000;
+    color: #fff;
+}
+.container{
+    padding: 100px;
+}
+h1{
+    font-size: 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-item{
+    width:196px;
+    text-decoration: none;
+    color: #fff;  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease;
+    margin: 15px 5px;
+}
+.row-item:hover{
+    transform: scale(1.03);
+}
+.row-img{
+    width: 100%;
+    object-fit: cover;
+    height: 110px;
+}
+.text{
+    text-align: center;
+    margin-top: 10px;
+}
+.badge{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: blue;
+    padding: 2px 5px;
+}
+.loader{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.filter span{
+    color: #fff;
+    font-size: 20px;
+    margin: 5px 10px;
+    padding: 5px 15px;
+    background-color: rgba(85, 85, 85, 0.5);
+    border-radius: 10px;
+}
+.filter span.active{
+    background-color:#f90;
+}
+ input{
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background: hsla(0,0%,100%,.08);
+    border: none;
+    -webkit-backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.5rem);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    width: 100%;
+    color: #fff;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    width: 400px;
+    margin-bottom: 30px;
+ }
